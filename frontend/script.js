@@ -9,7 +9,7 @@ function getQuote() {
     })
     .catch(function (error) {
       document.getElementById("quoteText").textContent =
-        "Could not load quote.";
+        "Could not load quote! :-(";
       console.log(error);
     });
 }
