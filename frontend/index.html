@@ -1,9 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lola's Quote Generator</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <title>Lola's Quote Generator</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-10 rounded-lg shadow-md max-w-md text-center card">
+    <p id="quoteText" class="text-xl mb-4">LOADING...</p>
+    <p id="quoteAuthor" class="text-gray-500 mb-6"></p>
+    <button onclick="getQuote()" class="bg-gray-800 hover:bg-gray-600 text-white px-5 py-2 rounded">
+      New Quote
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

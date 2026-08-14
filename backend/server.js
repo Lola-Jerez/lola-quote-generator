@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 const quotesPath = path.join(__dirname, "quotes.json");
 const quotes = JSON.parse(fs.readFileSync(quotesPath, "utf8"));
 
-// serve the frontend files, which live in a sibling folder
+// serve the frontend files in sibling folder
 app.use(express.static(path.join(__dirname, "..", "frontend")));
 
 // api route that returns one random quote

@@ -1,7 +1,7 @@
 {
   "name": "quote-generator-backend",
   "version": "1.0.0",
-  "description": "Quote generator",
+  "description": "Lola's Quote generator",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
