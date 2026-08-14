@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// load quotes from file into memory
+// loads quotes from file into memory
 const quotesPath = path.join(__dirname, "quotes.json");
 const quotes = JSON.parse(fs.readFileSync(quotesPath, "utf8"));
 

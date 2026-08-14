@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <title>Lola's Quote Generator</title>
 
-  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+</style>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-
-  <div class="bg-white p-10 rounded-lg shadow-md max-w-md text-center card">
-    <p id="quoteText" class="text-xl mb-4">LOADING NEW QUOTE...</p>
-    <p id="quoteAuthor" class="text-gray-500 mb-6"></p>
-    <button onclick="getQuote()" class="bg-gray-800 hover:bg-gray-600 text-white px-5 py-2 rounded">
-      New Quote
-    </button>
+  <div class="card bg-base-100 w-96 max-w-full shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title">Quote Generator</h2>
+      <p id="quoteText" class="text-xl mb-4">Loading quote...</p>
+      <p id="quoteAuthor" class="text-gray-500 mb-6"></p>
+      <div class="card-actions justify-end">
+        <button onclick="getQuote()" class="btn btn-primary">New Quote?</button>
+      </div>
+    </div>
   </div>
+
+</body>
 
   <script src="script.js"></script>
 </body>
