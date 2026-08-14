@@ -1,10 +1,14 @@
 /* some Tailwind defaults to edit */
 
+@import "tailwindcss";
+
 .card {
   transition: transform 0.15s ease;
 }
 
-
+.card-hover {
+  transition: transform 0.15s ease;
+}
 
 .bitcount-single-text{
   font-family: "Bitcount Single", system-ui;
